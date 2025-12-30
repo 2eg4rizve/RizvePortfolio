@@ -2,15 +2,15 @@ import React from 'react';
 import { Outlet, Link, useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import CustomCursor from './CustomCursor';
-// import Background3D from './Background3D';
+import Background3D from './Background3D';
 
 const Layout = () => {
     const location = useLocation();
 
     return (
         <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
-            {/* <CustomCursor /> */}
-            {/* <Background3D /> */}
+            <CustomCursor />
+            <Background3D />
             <div className="noise-overlay" />
 
 
